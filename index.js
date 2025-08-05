@@ -1,5 +1,5 @@
 const API =
-  "https://fsa-crud-2aa9294fe819.herokuapp.com/api/2109-CPU-RM-WEB-PT/recipes";
+  "https://fsa-crud-2aa9294fe819.herokuapp.com/api/2109-CPU-RM-WEB-PT/events";
 
 let recipes = [];
 let selectedRecipe;
@@ -50,7 +50,7 @@ function RecipeList() {
   $ul.style.listStyle = "none";
 
   for (const recipe of recipes) {
-    $ul.appendChild(RecipeListItem(recipe));
+    $ul.append(RecipeListItem(recipe));
   }
   return $ul;
 }
